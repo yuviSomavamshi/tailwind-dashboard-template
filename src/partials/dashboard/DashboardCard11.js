@@ -1,55 +1,54 @@
-import React from 'react';
-import BarChart from '../../charts/BarChart03';
+import React from "react";
+import BarChart from "../../charts/BarChart03";
 
 // Import utilities
-import { tailwindConfig } from '../../utils/Utils';
+import { tailwindConfig } from "../../utils/Utils";
 
 function DashboardCard11() {
-
   const chartData = {
-    labels: ['Reasons'],
+    labels: ["Reasons"],
     datasets: [
       {
-        label: 'Having difficulties using the product',
+        label: "Having difficulties using the product",
         data: [131],
         backgroundColor: tailwindConfig().theme.colors.indigo[500],
         hoverBackgroundColor: tailwindConfig().theme.colors.indigo[600],
         barPercentage: 1,
-        categoryPercentage: 1,
+        categoryPercentage: 1
       },
       {
-        label: 'Missing features I need',
+        label: "Missing features I need",
         data: [100],
         backgroundColor: tailwindConfig().theme.colors.indigo[800],
         hoverBackgroundColor: tailwindConfig().theme.colors.indigo[900],
         barPercentage: 1,
-        categoryPercentage: 1,
+        categoryPercentage: 1
       },
       {
-        label: 'Not satisfied about the quality of the product',
+        label: "Not satisfied about the quality of the product",
         data: [81],
-        backgroundColor: tailwindConfig().theme.colors['light-blue'][400],
-        hoverBackgroundColor: tailwindConfig().theme.colors['light-blue'][500],
+        backgroundColor: tailwindConfig().theme.colors["light-blue"][400],
+        hoverBackgroundColor: tailwindConfig().theme.colors["light-blue"][500],
         barPercentage: 1,
-        categoryPercentage: 1,
+        categoryPercentage: 1
       },
       {
-        label: 'The product doesn’t look as advertised',
+        label: "The product doesn’t look as advertised",
         data: [65],
         backgroundColor: tailwindConfig().theme.colors.green[400],
         hoverBackgroundColor: tailwindConfig().theme.colors.green[500],
         barPercentage: 1,
-        categoryPercentage: 1,
+        categoryPercentage: 1
       },
       {
-        label: 'Other',
+        label: "Other",
         data: [72],
         backgroundColor: tailwindConfig().theme.colors.gray[200],
         hoverBackgroundColor: tailwindConfig().theme.colors.gray[300],
         barPercentage: 1,
-        categoryPercentage: 1,
-      },
-    ],
+        categoryPercentage: 1
+      }
+    ]
   };
 
   return (

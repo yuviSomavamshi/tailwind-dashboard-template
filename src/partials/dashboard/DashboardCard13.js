@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function DashboardCard13() {
   return (
@@ -7,7 +7,6 @@ function DashboardCard13() {
         <h2 className="font-semibold text-gray-800">Income/Expenses</h2>
       </header>
       <div className="p-3">
-
         {/* Card content */}
         {/* "Today" group */}
         <div>
@@ -22,7 +21,12 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center border-b border-gray-100 text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">Qonto</a> billing</div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      Qonto
+                    </a>{" "}
+                    billing
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-gray-800">-$49.88</span>
                   </div>
@@ -38,7 +42,12 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center border-b border-gray-100 text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">Cruip.com</a> Market Ltd 70 Wilson St London</div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      Cruip.com
+                    </a>{" "}
+                    Market Ltd 70 Wilson St London
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-green-500">+249.88</span>
                   </div>
@@ -54,7 +63,11 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center border-b border-gray-100 text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">Notion Labs Inc</a></div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      Notion Labs Inc
+                    </a>
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-green-500">+99.99</span>
                   </div>
@@ -70,7 +83,11 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center border-b border-gray-100 text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">Market Cap Ltd</a></div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      Market Cap Ltd
+                    </a>
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-green-500">+1,200.88</span>
                   </div>
@@ -86,7 +103,12 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center border-b border-gray-100 text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">App.com</a> Market Ltd 70 Wilson St London</div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      App.com
+                    </a>{" "}
+                    Market Ltd 70 Wilson St London
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-gray-800 line-through">+$99.99</span>
                   </div>
@@ -102,7 +124,12 @@ function DashboardCard13() {
               </div>
               <div className="grow flex items-center text-sm py-2">
                 <div className="grow flex justify-between">
-                  <div className="self-center"><a className="font-medium text-gray-800 hover:text-gray-900" href="#0">App.com</a> Market Ltd 70 Wilson St London</div>
+                  <div className="self-center">
+                    <a className="font-medium text-gray-800 hover:text-gray-900" href="#0">
+                      App.com
+                    </a>{" "}
+                    Market Ltd 70 Wilson St London
+                  </div>
                   <div className="shrink-0 self-start ml-2">
                     <span className="font-medium text-gray-800">-$49.88</span>
                   </div>
@@ -111,7 +138,6 @@ function DashboardCard13() {
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   );

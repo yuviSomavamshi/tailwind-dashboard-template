@@ -1,76 +1,67 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
-import {
-  Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip,
-} from 'chart.js';
-import 'chartjs-adapter-moment';
+import { Chart, LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip } from "chart.js";
+import "chartjs-adapter-moment";
 
 // Import utilities
-import { tailwindConfig, formatValue } from '../utils/Utils';
+import { tailwindConfig, formatValue } from "../utils/Utils";
 
 Chart.register(LineController, LineElement, Filler, PointElement, LinearScale, TimeScale, Tooltip);
 
-function LineChart01({
-  data,
-  width,
-  height
-}) {
-
+function LineChart01({ data, width, height }) {
   const canvas = useRef(null);
 
   useEffect(() => {
     const ctx = canvas.current;
     // eslint-disable-next-line no-unused-vars
     const chart = new Chart(ctx, {
-      type: 'line',
+      type: "line",
       data: data,
       options: {
         chartArea: {
-          backgroundColor: tailwindConfig().theme.colors.gray[50],
+          backgroundColor: tailwindConfig().theme.colors.gray[50]
         },
         layout: {
-          padding: 20,
+          padding: 20
         },
         scales: {
           y: {
             display: false,
-            beginAtZero: true,
+            beginAtZero: true
           },
           x: {
-            type: 'time',
+            type: "time",
             time: {
-              parser: 'MM-DD-YYYY',
-              unit: 'month',
+              parser: "MM-DD-YYYY",
+              unit: "month"
             },
-            display: false,
-          },
+            display: false
+          }
         },
         plugins: {
           tooltip: {
             callbacks: {
               title: () => false, // Disable tooltip title
-              label: (context) => formatValue(context.parsed.y),
-            },
+              label: (context) => formatValue(context.parsed.y)
+            }
           },
           legend: {
-            display: false,
-          },
+            display: false
+          }
         },
         interaction: {
           intersect: false,
-          mode: 'nearest',
+          mode: "nearest"
         },
         maintainAspectRatio: false,
-        resizeDelay: 200,
-      },
+        resizeDelay: 200
+      }
     });
     return () => chart.destroy();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <canvas ref={canvas} width={width} height={height}></canvas>
-  );
+  return <canvas ref={canvas} width={width} height={height}></canvas>;
 }
 
 export default LineChart01;

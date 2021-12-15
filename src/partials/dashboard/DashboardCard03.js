@@ -1,35 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import LineChart from '../../charts/LineChart01';
-import Icon from '../../images/icon-03.svg';
-import EditMenu from '../EditMenu';
+import React from "react";
+import { Link } from "react-router-dom";
+import LineChart from "../../charts/LineChart01";
+import Icon from "../../images/icon-03.svg";
+import EditMenu from "../EditMenu";
 
 // Import utilities
-import { tailwindConfig, hexToRGB } from '../../utils/Utils';
+import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 
 function DashboardCard03() {
-
   const chartData = {
     labels: [
-      '12-01-2020', '01-01-2021', '02-01-2021',
-      '03-01-2021', '04-01-2021', '05-01-2021',
-      '06-01-2021', '07-01-2021', '08-01-2021',
-      '09-01-2021', '10-01-2021', '11-01-2021',
-      '12-01-2021', '01-01-2022', '02-01-2022',
-      '03-01-2022', '04-01-2022', '05-01-2022',
-      '06-01-2022', '07-01-2022', '08-01-2022',
-      '09-01-2022', '10-01-2022', '11-01-2022',
-      '12-01-2022', '01-01-2023',
+      "12-01-2020",
+      "01-01-2021",
+      "02-01-2021",
+      "03-01-2021",
+      "04-01-2021",
+      "05-01-2021",
+      "06-01-2021",
+      "07-01-2021",
+      "08-01-2021",
+      "09-01-2021",
+      "10-01-2021",
+      "11-01-2021",
+      "12-01-2021",
+      "01-01-2022",
+      "02-01-2022",
+      "03-01-2022",
+      "04-01-2022",
+      "05-01-2022",
+      "06-01-2022",
+      "07-01-2022",
+      "08-01-2022",
+      "09-01-2022",
+      "10-01-2022",
+      "11-01-2022",
+      "12-01-2022",
+      "01-01-2023"
     ],
     datasets: [
       // Indigo line
       {
-        data: [
-          540, 466, 540, 466, 385, 432, 334,
-          334, 289, 289, 200, 289, 222, 289,
-          289, 403, 554, 304, 289, 270, 134,
-          270, 829, 344, 388, 364,
-        ],
+        data: [540, 466, 540, 466, 385, 432, 334, 334, 289, 289, 200, 289, 222, 289, 289, 403, 554, 304, 289, 270, 134, 270, 829, 344, 388, 364],
         fill: true,
         backgroundColor: `rgba(${hexToRGB(tailwindConfig().theme.colors.blue[500])}, 0.08)`,
         borderColor: tailwindConfig().theme.colors.indigo[500],
@@ -38,25 +49,20 @@ function DashboardCard03() {
         pointRadius: 0,
         pointHoverRadius: 3,
         pointBackgroundColor: tailwindConfig().theme.colors.indigo[500],
-        clip: 20,
+        clip: 20
       },
       // Gray line
       {
-        data: [
-          689, 562, 477, 477, 477, 477, 458,
-          314, 430, 378, 430, 498, 642, 350,
-          145, 145, 354, 260, 188, 188, 300,
-          300, 282, 364, 660, 554,
-        ],
+        data: [689, 562, 477, 477, 477, 477, 458, 314, 430, 378, 430, 498, 642, 350, 145, 145, 354, 260, 188, 188, 300, 300, 282, 364, 660, 554],
         borderColor: tailwindConfig().theme.colors.gray[300],
         borderWidth: 2,
         tension: 0,
         pointRadius: 0,
         pointHoverRadius: 3,
         pointBackgroundColor: tailwindConfig().theme.colors.gray[300],
-        clip: 20,
-      },
-    ],
+        clip: 20
+      }
+    ]
   };
 
   return (
@@ -68,13 +74,19 @@ function DashboardCard03() {
           {/* Menu button */}
           <EditMenu className="relative inline-flex">
             <li>
-              <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">Option 1</Link>
+              <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">
+                Option 1
+              </Link>
             </li>
             <li>
-              <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">Option 2</Link>
+              <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">
+                Option 2
+              </Link>
             </li>
             <li>
-              <Link className="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" to="#0">Remove</Link>
+              <Link className="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" to="#0">
+                Remove
+              </Link>
             </li>
           </EditMenu>
         </header>

@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Transition from '../../utils/Transition.js';
+import React, { useState, useRef, useEffect } from "react";
+import Transition from "../../utils/Transition.js";
 
 function FilterButton() {
-
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const trigger = useRef(null);
@@ -14,8 +13,8 @@ function FilterButton() {
       if (!dropdownOpen || dropdown.current.contains(target) || trigger.current.contains(target)) return;
       setDropdownOpen(false);
     };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
+    document.addEventListener("click", clickHandler);
+    return () => document.removeEventListener("click", clickHandler);
   });
 
   // close if the esc key is pressed
@@ -24,8 +23,8 @@ function FilterButton() {
       if (!dropdownOpen || keyCode !== 27) return;
       setDropdownOpen(false);
     };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
+    document.addEventListener("keydown", keyHandler);
+    return () => document.removeEventListener("keydown", keyHandler);
   });
 
   return (
@@ -37,7 +36,8 @@ function FilterButton() {
         onClick={() => setDropdownOpen(!dropdownOpen)}
         aria-expanded={dropdownOpen}
       >
-        <span className="sr-only">Filter</span><wbr />
+        <span className="sr-only">Filter</span>
+        <wbr />
         <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16">
           <path d="M9 15H7a1 1 0 010-2h2a1 1 0 010 2zM11 11H5a1 1 0 010-2h6a1 1 0 010 2zM13 7H3a1 1 0 010-2h10a1 1 0 010 2zM15 3H1a1 1 0 010-2h14a1 1 0 010 2z" />
         </svg>
@@ -99,7 +99,13 @@ function FilterButton() {
                 <button className="btn-xs bg-white border-gray-200 hover:border-gray-300 text-gray-500 hover:text-gray-600">Clear</button>
               </li>
               <li>
-                <button className="btn-xs bg-indigo-500 hover:bg-indigo-600 text-white" onClick={() => setDropdownOpen(false)} onBlur={() => setDropdownOpen(false)}>Apply</button>
+                <button
+                  className="btn-xs bg-indigo-500 hover:bg-indigo-600 text-white"
+                  onClick={() => setDropdownOpen(false)}
+                  onBlur={() => setDropdownOpen(false)}
+                >
+                  Apply
+                </button>
               </li>
             </ul>
           </div>
