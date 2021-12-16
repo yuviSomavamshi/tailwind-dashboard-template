@@ -30,7 +30,7 @@
     "eject": "craco eject",
     "dev": "npm i -g npm-check-updates && npm run dev:upgrade && npm i && npm run dev:prettify",
     "dev:upgrade": "ncu -u --packageFile package.json",
-    "dev:prettify": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json,ts,tsx,css}\""
+    "dev:prettify": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json,ts,tsx,css,svg}\""
   },
   "eslintConfig": {
     "extends": [

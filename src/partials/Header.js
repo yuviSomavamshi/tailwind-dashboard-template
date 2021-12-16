@@ -25,6 +25,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
                 <rect x="4" y="17" width="16" height="2" />
               </svg>
             </button>
+            <span className="ml-5 text-base font-semibold">Vinashak</span>
           </div>
 
           {/* Header: Right side */}
