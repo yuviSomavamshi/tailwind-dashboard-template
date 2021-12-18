@@ -4,6 +4,8 @@ import Sidebar from "../partials/Sidebar";
 import Header from "../partials/Header";
 import FilterButton from "../partials/actions/FilterButton";
 import Datepicker from "../partials/actions/Datepicker";
+import Select from "../partials/actions/Select";
+
 import DashboardCard04 from "../partials/dashboard/DashboardCard04";
 import DashboardCard05 from "../partials/dashboard/DashboardCard05";
 import DashboardCard06 from "../partials/dashboard/DashboardCard06";
@@ -15,7 +17,20 @@ import DashboardCard11 from "../partials/dashboard/DashboardCard11";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import DashboardCard13 from "../partials/dashboard/DashboardCard13";
 
-function Dashboard() {
+const types = [
+  {
+    id: 1,
+    label: "Pilot project",
+    value: "Pilot project"
+  },
+  {
+    id: 2,
+    label: "Test project",
+    value: "Test project"
+  }
+];
+
+function Analytics() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -30,12 +45,31 @@ function Dashboard() {
 
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-4 w-full max-w-9xl mx-auto">
+            {/* Dashboard actions */}
+            <div className="sm:flex sm:justify-between sm:items-center mb-4">
+              {/* Left: div */}
+              <div />
+
+              {/* Right: Actions */}
+              <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
+                <Select options={types} selectedOption={types[0]} />
+                {/* Filter button */}
+                <FilterButton />
+                {/* Datepicker built with flatpickr */}
+                <Datepicker />
+              </div>
+            </div>
+
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
-              {/* Table (Top Projects) */}
-              <DashboardCard07 />
+              {/* Bar chart (Direct vs Indirect) */}
+              <DashboardCard04 />
+              {/* Line chart (Sales Over Time) */}
+              <DashboardCard08 />
               {/* Doughnut chart (Top Suites) */}
               <DashboardCard06 />
+              {/* Table (Top Projects) */}
+              <DashboardCard07 />
               {/* Line chart (Real Time Value) */}
               <DashboardCard05 />
               {/* Stacked bar chart (Sales VS Refunds) */}
@@ -56,4 +90,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Analytics;

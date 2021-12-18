@@ -71,7 +71,7 @@ function FilterButton() {
             <li className="py-1 px-3">
               <label className="flex items-center">
                 <input type="checkbox" className="form-checkbox" />
-                <span className="text-sm font-medium ml-2">Top Channels</span>
+                <span className="text-sm font-medium ml-2">Top Projects</span>
               </label>
             </li>
             <li className="py-1 px-3">

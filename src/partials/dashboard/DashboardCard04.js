@@ -12,8 +12,8 @@ function DashboardCard04() {
       {
         label: "Pass",
         data: [30, 31, 28, 32, 2, 31],
-        backgroundColor: tailwindConfig().theme.colors.blue[500],
-        hoverBackgroundColor: tailwindConfig().theme.colors.blue[600],
+        backgroundColor: tailwindConfig().theme.colors.indigo[500],
+        hoverBackgroundColor: tailwindConfig().theme.colors.indigo[600],
         barPercentage: 0.66,
         categoryPercentage: 0.66
       },

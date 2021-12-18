@@ -78,9 +78,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             </svg>
           </button>
           {/* Logo */}
-          <NavLink exact to="/" className="block w-full" >
-          <div className="flex flex-row items-center">
-          <img src={Logo} width="32" height="32" alt="Logo"/>
+          <NavLink exact to="/" className="block w-full">
+            <div className="flex flex-row items-center">
+              <img src={Logo} width="32" height="32" alt="Logo" />
               <span className="text-white text-3xl ml-2 font-kaushian">Vinashak</span>
             </div>
           </NavLink>
