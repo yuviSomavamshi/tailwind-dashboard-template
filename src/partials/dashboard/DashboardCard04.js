@@ -10,19 +10,19 @@ function DashboardCard04() {
     datasets: [
       // Light blue bars
       {
-        label: "Direct",
-        data: [800, 1600, 900, 1300, 1950, 1700],
-        backgroundColor: tailwindConfig().theme.colors.blue[400],
-        hoverBackgroundColor: tailwindConfig().theme.colors.blue[500],
+        label: "Pass",
+        data: [30, 31, 28, 32, 2, 31],
+        backgroundColor: tailwindConfig().theme.colors.blue[500],
+        hoverBackgroundColor: tailwindConfig().theme.colors.blue[600],
         barPercentage: 0.66,
         categoryPercentage: 0.66
       },
       // Blue bars
       {
-        label: "Indirect",
-        data: [4900, 2600, 5350, 4800, 5200, 4800],
-        backgroundColor: tailwindConfig().theme.colors.indigo[500],
-        hoverBackgroundColor: tailwindConfig().theme.colors.indigo[600],
+        label: "Fail",
+        data: [2, 1, 4, 0, 30, 1],
+        backgroundColor: tailwindConfig().theme.colors.red[500],
+        hoverBackgroundColor: tailwindConfig().theme.colors.red[600],
         barPercentage: 0.66,
         categoryPercentage: 0.66
       }

@@ -80,8 +80,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           {/* Logo */}
           <NavLink exact to="/" className="block w-full" >
           <div className="flex flex-row items-center">
-          <img src={Logo} width="38" height="38" alt="Logo"/>
-              <span className="text-white text-lg ml-4">Vinashak</span>
+          <img src={Logo} width="32" height="32" alt="Logo"/>
+              <span className="text-white text-3xl ml-2 font-kaushian">Vinashak</span>
             </div>
           </NavLink>
         </div>

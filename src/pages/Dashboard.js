@@ -49,22 +49,17 @@ function Dashboard() {
 
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
-              {/* Line chart (Vinashak Plus) */}
-              <DashboardCard01 />
-              {/* Line chart (Vinashak Advanced) */}
-              <DashboardCard02 />
-              {/* Line chart (Vinashak Professional) */}
-              <DashboardCard03 />
+              
               {/* Bar chart (Direct vs Indirect) */}
               <DashboardCard04 />
-              {/* Line chart (Real Time Value) */}
-              <DashboardCard05 />
+              {/* Line chart (Sales Over Time) */}
+              <DashboardCard08 />
               {/* Doughnut chart (Top Countries) */}
               <DashboardCard06 />
               {/* Table (Top Channels) */}
               <DashboardCard07 />
-              {/* Line chart (Sales Over Time) */}
-              <DashboardCard08 />
+              {/* Line chart (Real Time Value) */}
+              <DashboardCard05 />
               {/* Stacked bar chart (Sales VS Refunds) */}
               <DashboardCard09 />
               {/* Card (Customers) */}
