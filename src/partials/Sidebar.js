@@ -81,7 +81,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           <NavLink exact to="/" className="block w-full">
             <div className="flex flex-row items-center">
               <img src={Logo} width="32" height="32" alt="Logo" />
-              <span className="text-white text-3xl ml-2 font-kaushian">Vinashak</span>
+              <span className="text-white text-lg ml-2 font-kaushian">Automation</span>
             </div>
           </NavLink>
         </div>
@@ -172,7 +172,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             />
                           </svg>
                           <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                            E-Commerce
+                            Project
                           </span>
                         </div>
                         {/* Icon */}
@@ -188,64 +188,25 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         <li className="mb-1 last:mb-0">
                           <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Customers
+                              Projects
                             </span>
                           </NavLink>
                         </li>
                         <li className="mb-1 last:mb-0">
                           <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Orders
+                              Test Suites
                             </span>
                           </NavLink>
                         </li>
                         <li className="mb-1 last:mb-0">
                           <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Invoices
+                              Test Scenarios
                             </span>
                           </NavLink>
                         </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Shop
-                            </span>
-                          </NavLink>
-                        </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Shop 2
-                            </span>
-                          </NavLink>
-                        </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Single Product
-                            </span>
-                          </NavLink>
-                        </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Cart
-                            </span>
-                          </NavLink>
-                        </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Cart 2
-                            </span>
-                          </NavLink>
-                        </li>
-                        <li className="mb-1 last:mb-0">
-                          <NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">
-                            <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Pay</span>
-                          </NavLink>
-                        </li>
+                        
                       </ul>
                     </div>
                   </React.Fragment>
@@ -273,7 +234,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                     />
                   </svg>
                   <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                    Campaigns
+                    Documentation
                   </span>
                 </div>
               </NavLink>
@@ -395,30 +356,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 </div>
               </NavLink>
             </li>
-            {/* Inbox */}
-            <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes("inbox") && "bg-gray-900"}`}>
-              <NavLink
-                exact
-                to="/"
-                className={`block text-gray-200 hover:text-white truncate transition duration-150 ${
-                  pathname.includes("inbox") && "hover:text-gray-200"
-                }`}
-              >
-                <div className="flex items-center">
-                  <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                    <path
-                      className={`fill-current text-gray-600 ${pathname.includes("inbox") && "text-indigo-500"}`}
-                      d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"
-                    />
-                    <path
-                      className={`fill-current text-gray-400 ${pathname.includes("inbox") && "text-indigo-300"}`}
-                      d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"
-                    />
-                  </svg>
-                  <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox</span>
-                </div>
-              </NavLink>
-            </li>
+           
             {/* Calendar */}
             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes("calendar") && "bg-gray-900"}`}>
               <NavLink
@@ -436,7 +374,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"
                     />
                   </svg>
-                  <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Calendar</span>
+                  <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Schedular</span>
                 </div>
               </NavLink>
             </li>

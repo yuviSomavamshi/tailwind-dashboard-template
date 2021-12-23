@@ -3,6 +3,8 @@ import SearchModal from "./header/SearchModal";
 import Notifications from "./header/Notifications";
 import Help from "./header/Help";
 import UserMenu from "./header/UserMenu";
+import { Close, SignalCellularAlt } from "@mui/icons-material";
+
 
 function Header({ sidebarOpen, setSidebarOpen }) {
   return (
@@ -25,6 +27,15 @@ function Header({ sidebarOpen, setSidebarOpen }) {
                 <rect x="4" y="17" width="16" height="2" />
               </svg>
             </button>
+            <div className="flex flex-row items-center justify-between px-4 py-1 shadow-sm rounded border">
+            <span className={`flex flex-row font-light text-gray-400 tracking-wide items-center`}>
+              <SignalCellularAlt className="animate-pulse" title={true ? "Setup is ONLINE" : "Setup is OFFLINE"} />
+              <span className="ml-2 font-semibold">Simulator Product</span>
+            </span>
+            <button className="text-cds-ice-0100 focus:outline-none ml-4 font-extrabold hover:text-red-600">
+              <Close className="h-5 w-5" />
+            </button>
+          </div>
           </div>
 
           {/* Header: Right side */}

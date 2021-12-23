@@ -64,7 +64,7 @@ function Analytics() {
             <div className="grid grid-cols-12 gap-6">
               {/* Bar chart (Direct vs Indirect) */}
               <DashboardCard04 />
-              {/* Line chart (Sales Over Time) */}
+              {/* Line chart (Daily Automation Trend) */}
               <DashboardCard08 />
               {/* Doughnut chart (Top Suites) */}
               <DashboardCard06 />
